@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Contact = () => {
+    useEffect(() => {
+      document.title = "You are on the Contact Page!😊";
+      console.log("Component Mounted!");
+  
+      return () => {
+        document.title = "Vite App";
+        console.log("Component Unmounted");
+      };
+    }, []);
   const [formData, setFormData] = React.useState({
     name: "",
     email: "",

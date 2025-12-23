@@ -329,6 +329,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
+import Category from "./Category";
 
 const App = () => {
   return (
@@ -343,12 +344,16 @@ const App = () => {
         <Link to="/contact" className="hover:text-zinc-300">
           Contact
         </Link>
+        <Link to="/category" className="hover:text-zinc-300">
+          Category
+        </Link>
       </nav>
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/category" element={<Category />} />
       </Routes>
     </div>
   );

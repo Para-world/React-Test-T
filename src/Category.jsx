@@ -30,6 +30,18 @@ const Category = () => {
         >
           Increment Count
         </button>
+          <button
+          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition-colors"
+          onClick={() => setCount((prev) => prev == 0 ? 0 : prev - 1)}
+        >
+          Decrement Count
+        </button>
+          <button
+          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition-colors"
+          onClick={() => setCount((prev) => prev = 0)}
+        >
+          Reset Count
+        </button>
       </div>
     </div>
   );

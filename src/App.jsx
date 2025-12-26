@@ -5,6 +5,7 @@ import About from "./About";
 import Contact from "./Contact";
 import Category from "./Category";
 import Mount from "./Mount";
+import Usecontext from "./Usecontext";
 
 const App = () => {
   return (
@@ -25,6 +26,9 @@ const App = () => {
         <Link to="/mount" className="hover:text-zinc-300">
           Mount
         </Link>
+        <Link to="/usecontext" className="hover:text-zinc-300">
+          Usecontext
+        </Link>
       </nav>
 
       <Routes>
@@ -33,6 +37,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/category" element={<Category />} />
         <Route path="/mount" element={<Mount />} />
+        <Route path="/usecontext" element={<Usecontext />} />
       </Routes>
     </div>
   );

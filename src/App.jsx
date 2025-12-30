@@ -6,12 +6,14 @@ import Contact from "./Contact";
 import Category from "./Category";
 import Mount from "./Mount";
 import Usecontext from "./Usecontext";
+import Reducer from "./Reducer";
+
 
 const App = () => {
   return (
     <div className="bg-zinc-800 min-h-screen text-white">
       <nav className="p-4 border-b border-zinc-700 flex gap-4">
-        <Link to="/" className="hover:text-zinc-300"> 
+        <Link to="/" className="hover:text-zinc-300">
           Home
         </Link>
         <Link to="/about" className="hover:text-zinc-300">
@@ -29,6 +31,10 @@ const App = () => {
         <Link to="/usecontext" className="hover:text-zinc-300">
           Usecontext
         </Link>
+        <Link to="/reducer" className="hover:text-zinc-300">
+          Reducer
+        </Link>
+      
       </nav>
 
       <Routes>
@@ -38,6 +44,8 @@ const App = () => {
         <Route path="/category" element={<Category />} />
         <Route path="/mount" element={<Mount />} />
         <Route path="/usecontext" element={<Usecontext />} />
+        <Route path="/reducer" element={<Reducer />} />
+       
       </Routes>
     </div>
   );

@@ -38,8 +38,7 @@ const Card = () => {
     >
       <h2 className="text-2xl font-bold mb-2">Theme Card</h2>
       <p className="mb-4">
-        This card's style changes automatically based on the global theme
-        context. No props were passed to me!
+         Ek chutki sindoor ki keemat tum kya jaano Ritesh Babu?
       </p>
       <div className="text-sm opacity-70">
         Current Theme:{" "}
